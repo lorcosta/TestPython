@@ -1,13 +1,10 @@
 if __name__=='__main__':
-	print("This script takes what's inside original.txt and copy it into copy.txt")
-	f=open('original.txt')
-	fileContent=f.read()
-	w=open('copy.txt','w')
-	w.write('The content of the original file is:\n')
-	w.write('%s' %fileContent)
-	w.close()
-	w=open('copy.txt')
-	copyContent=w.read()
-	print('%s' %copyContent)
-	f.close()
-	w.close()
+	inp=int(input("Please type a number: "))
+	if inp%2==0 and inp%3==0:
+		print('Your number is multiple of 2 and 3')
+	elif inp%2==0:
+		print("Your number is a multiple of 2")
+	elif inp%3==0:
+		print("Your number is a multiple of 3")
+	else:
+		print("Your number is nor multiple of 2 and nor of 3")
