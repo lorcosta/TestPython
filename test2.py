@@ -1,10 +1,19 @@
 if __name__=='__main__':
-	inp=int(input("Please type a number: "))
-	if inp%2==0 and inp%3==0:
-		print('Your number is multiple of 2 and 3')
-	elif inp%2==0:
-		print("Your number is a multiple of 2")
-	elif inp%3==0:
-		print("Your number is a multiple of 3")
-	else:
-		print("Your number is nor multiple of 2 and nor of 3")
+	numbers=[1,2,3,4,5,6,7,8,9,10]
+	sommaNumeri=0
+	lunghezza=len(numbers)
+	for item in numbers:
+		sommaNumeri+=item
+	print(f'la media tra i numeri da 1 a 10 è {sommaNumeri/lunghezza}')
+	maxValue=0
+	for item in numbers:
+		if item>maxValue:
+			maxValue=item
+	print(f'Il valore massimo tra i numeri da 1 a 10 è {maxValue}')
+	minValue=100
+	for item in numbers:
+		if item<minValue:
+			minValue=item
+	print(f'Il valore minimo tra i numeri da 1 a 10 è {minValue}')
+	
+
